@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lan="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bendita Cura - Cestas de Café da Manhã</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="Nome">
+        <h1>Site de Cestas (Exemplo)</h1>
+      </div>
+      <ul class="menu">
+        <li><a href="#cestas">Cestas</a></li>
+        <li><a href="#contato">Fale Conosco</a></li>
+        <li><a href="#empresa">Empresa</a></li>
+      </ul>    
+    </nav>
+  </header>
+
+  <section id="banner">
+    <h2>Cestas que alimentam corpo e alma com sabor e carinho!</h2>
+    <a href="#cestas" class="btn">Ver Cestas</a>
+  </section>
+
+  <section id="cestas">
+    <div class="container">
+      <h2>Nossas Cestas</h2>
+      <div class="cesta">
+        <img src="imagem1.jpg" alt="Cesta 1" onclick="openModal('Cesta 1', 'Descrição da Cesta 1')">
+        <h3>Cesta 1</h3>
+        <p>Descrição da Cesta 1</p>
+      </div>
+      <div class="cesta">
+        <img src="imagem2.jpg" alt="Cesta 2" onclick="openModal('Cesta 2', 'Descrição da Cesta 2')">
+        <h3>Cesta 2</h3>
+        <p>Descrição da Cesta 2</p>
+      </div>
+      <div class="cesta">
+        <img src="imagem3.jpg" alt="Cesta 3" onclick="openModal('Cesta 3', 'Descrição da Cesta 3')">
+        <h3>Cesta 3</h3>
+        <p>Descrição da Cesta 3</p>
+      </div>
+    </div>
+  </section>
+  
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <section id="contato">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <div class="contato-info">
+        <p>Telefone: (xx) xxxx-xxxx</p>
+        <p>Email: exemplo@gmail.com</p>
+      </div>
+      <div class="redes-sociais">
+        <a href="https://www.facebook.com" target="_blank"><img src="img/FacebookLogo.png"width="25" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="img/InstagramLogo.png"width="30" alt="Instagram"></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="empresa">
+    <div class="container">
+      <h2>Sobre a Empresa</h2>
+      <p>Bem-vindo ao mundo dos sabores e momentos especiais! Em nossa empresa, buscamos criar experiências gastronômicas únicas, oferecendo cestas cheias de charme, sabor e emoção.
+
+        Nossas cestas de café da manhã são projetadas para fazer você sorrir logo de manhã. Utilizando ingredientes frescos e criteriosamente selecionados, oferecemos uma vasta gama de pães, croissants, fruta fresca, compotas caseiras e deliciosos assados. Cada produto é pensado para transformar a primeira refeição do dia em um momento de pura alegria.
+        
+        Mas não paramos por aí. Nossa paixão por cozinhar se estende às massas. Preparamos massas frescas, aromáticas e de textura fina, que acompanhamos com um molho único que acompanha na perfeição cada receita. Quer seja um jantar romântico, um almoço em família ou um convívio entre amigos, as nossas massas são ideais para criar momentos memoráveis ​​à mesa.
+        Para celebrar uma ocasião especial ou apenas para desfrutar de bons momentos, temos vinhos criteriosamente selecionados. Dos clássicos aos mais exóticos, os nossos vinhos são criteriosamente selecionados pela qualidade e uma experiência sensorial incomparável. Permita-se explorar novos sabores e brindar à vida e à conquista.
+
+Na nossa empresa prezamos pela qualidade, dedicação e satisfação do cliente. Cada cesta é recheada de amor e atenção aos detalhes, buscando superar expectativas e transmitir emoção. Queremos que cada cliente se sinta especial e satisfeito com as nossas criações culinárias.
+
+Seja presenteando uma pessoa querida, comemorando uma data especial ou simplesmente curtindo um momento único, nossa empresa está pronta para transformar cada ocasião em uma experiência gastronômica inesquecível. Deixe-nos agradá-lo com nossa cesta de café da manhã, massas e vinhos. Estamos ansiosos para fazer parte de seus momentos mais deliciosos!</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+<script>
+  function openModal(title, description) {
+    var modal = document.getElementById("modal");
+    var modalTitle = document.getElementById("modal-title");
+    var modalDescription = document.getElementById("modal-description");
+
+    modalTitle.textContent = title;
+    modalDescription.textContent = description;
+
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+</script>
+
+</html>

@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  ul.menu {
+    list-style: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  header {
+    background-color: #272424;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Nome h1 {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  #banner {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f8f8f8;
+  }
+  
+  #banner h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  #cestas {
+    padding: 40px 0;
+  }
+  
+  #cestas h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  #contato {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+  }
+  
+  #contato h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .contato-info p {
+    margin-bottom: 10px;
+  }
+  
+  .redes-sociais {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .redes-sociais a {
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  #empresa {
+    padding: 40px 0;
+  }
+  
+  #empresa h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+    }
+
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .modal-content h3 {
+      margin-top: 0;
+    }
+
+    .modal-content .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  .LOGO{
+    right: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+  }
+  
